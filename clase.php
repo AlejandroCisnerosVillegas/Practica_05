@@ -1,35 +1,31 @@
 <?php
-class DBControl {
-	private $conn;
-	
-	function __construct() 
-	{ 
-	$this->conn = $this->conectarDB();
-	}
-	
-	function conectarDB() 
-	{
-		$conn = mysqli_connect("IP_Address","User","Password","DataBase_Name");
-		return $conn;
-	}
-	
-	function vaiquery($query) 
-	{
-		$resultado = mysqli_query($this->conn,$query);
-		while($fila=mysqli_fetch_assoc($resultado)) 
+	class DBControl {
+		private $conn;
+		function __construct() 
+		{ 
+		$this->conn = $this->conectarDB();
+		}
+		function conectarDB() 
 		{
-			$obtener_resultado[] = $fila;
-		}		
-		if(!empty($obtener_resultado))
+			$conn = mysqli_connect("localhost","root","","general");
+			return $conn;
+		}
+		function vaiquery($query) 
 		{
-		return $obtener_resultado;
+			$resultado = mysqli_query($this->conn,$query);
+			while($fila=mysqli_fetch_assoc($resultado)) 
+			{
+				$obtener_resultado[] = $fila;
+			}		
+			if(!empty($obtener_resultado))
+			{
+			return $obtener_resultado;
+			}
+		}
+		function nfilas($query) {
+			$resultado  = mysqli_query($this->conn,$query);
+			$totalfilas = mysqli_num_rows($resultado);
+			return $totalfilas;	
 		}
 	}
-	
-	function nfilas($query) {
-		$resultado  = mysqli_query($this->conn,$query);
-		$totalfilas = mysqli_num_rows($resultado);
-		return $totalfilas;	
-	}
-}
 ?>
