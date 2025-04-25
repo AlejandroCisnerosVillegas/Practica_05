@@ -16,7 +16,7 @@ Si un producto ya está en el carrito, la cantidad se actualiza en lugar de agre
 
 El gestor de carrito de compras proporciona una experiencia de compra fluida y conveniente para los usuarios, permitiéndoles seleccionar, modificar y comprar productos de manera eficiente. La implementación se realizó utilizando tecnologías web estándar como PHP, MySQL, HTML y CSS, garantizando así la compatibilidad y la accesibilidad en diferentes plataformas y dispositivos.
 
-**Consulta la versión preliminar de la practica aquí:** [https://practica_05.com](https://alejandrovillegas.net/projects/practice-05/index.php)
+**Consulta la versión preliminar de la practica aquí:** [https://practica_05.com](https://www.alejandrovillegas.dev/projects/practice-05/index.php)
 
 # 📌 Información de la Practica
 
@@ -28,7 +28,7 @@ Esta practica ha sido desarrollado como parte del portafolio de soluciones tecno
 
 - **Fecha de Desarrollo**: 27 de mayo de 2018
 
-- **Portafolio de Proyectos**: [www.alejandrovillegas.net](https://www.alejandrovillegas.net/)
+- **Portafolio de Proyectos**: [www.alejandrovillegas.dev](https://www.alejandrovillegas.dev)
 
 # Guía de Instalación y Configuración
 
